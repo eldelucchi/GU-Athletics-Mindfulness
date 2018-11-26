@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+    <head>
+        <title>FusionCharts - iOS Example</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <!-- including FusionCharts core package JS files -->
+            <script src="js/fusioncharts.js"></script>
+            <script src="js/fusioncharts.charts.js"></script>
+            <style>
+                @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+                
+                body { background-color: #212831; }
+                </style>
+            <!-- chart instance -->
+            <script>
+                FusionCharts.ready(function() {
+                var appChart = new FusionCharts({
+                                                                   type: 'doughnut2d',
+                                                                   width: '100%',
+                                                                   height: '350',
+                                                                   renderAt: 'chartContainer',
+                                                                   dataFormat: 'json',
+                                                                   dataSource: {
+                                                                   "chart": {
+                                                                   "caption": "New vs Retruning Users - 2017",
+                                                                   "captionFontSize": "17",
+                                                                   "captionFontBold": "0",
+                                                                   "subCaption": "ACME Inc.",
+                                                                   "subCaptionFontSize": "15",
+                                                                   "paletteColors": "#D68554, #DC4D52",
+                                                                   "bgColor": "#212831",
+                                                                   "canvasBgColor": "#212831",
+                                                                   "bgAlpha": "100",
+                                                                   "canvasBgAlpha": "0",
+                                                                   "showBorder": "0",
+                                                                   "showLabels": "0",
+                                                                   "showLegend": "1",
+                                                                   "legendBorderAlpha": "0",
+                                                                   "legendShadow": "0",
+                                                                   "use3DLighting": "0",
+                                                                   "showShadow": "0",
+                                                                   "drawCustomLegendIcon": "1",
+                                                                   "pieRadius": "100",
+                                                                   "doughnutRadius": "60",
+                                                                   "showPercentValues": "1",
+                                                                   "legendIconSides": "2",
+                                                                   "legendIconBorderThickness": "0",
+                                                                   "baseFont": "Source Sans Pro",
+                                                                   "defaultCenterLabel": "Total Visitors: 1.39M",
+                                                                   "centerLabel": "$label Visitors: $value",
+                                                                   "centerLabelBold": "0",
+                                                                   "baseFontSize": "13",
+                                                                   "startingAngle": "70",
+                                                                   "enableSlicing": "0",
+                                                                   "legendBgAlpha": "0",
+                                                                   "baseFontColor": "#FFFFFF",
+                                                                   "showTooltip": "0",
+                                                                   "showPlotBorder": "0"
+                                                                   },
+                                                                   "data": [
+                                                                            {
+                                                                            "label": "Returning",
+                                                                            "value": "862736.82"
+                                                                            },
+                                                                            {
+                                                                            "label": "New",
+                                                                            "value": "528774.18"
+                                                                            }
+                                                                            ]
+                                                                   }
+                                                                   }).render();
+                                   });
+                </script>
+            </head>
+    <body>
+        <!-- chart container -->
+        <div id="chartContainer">Chart will render here!</div>
+    </body>
+</html>

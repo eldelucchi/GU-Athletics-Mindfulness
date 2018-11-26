@@ -13,6 +13,12 @@
 		B517312621ACA22D002096C4 /* GU_Athletics_Mindfulness.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B517312421ACA22D002096C4 /* GU_Athletics_Mindfulness.xcdatamodeld */; };
 		B517312821ACA230002096C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B517312721ACA230002096C4 /* Assets.xcassets */; };
 		B517312B21ACA230002096C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B517312921ACA230002096C4 /* LaunchScreen.storyboard */; };
+		B517313321ACA424002096C4 /* chart.html in Resources */ = {isa = PBXBuildFile; fileRef = B517313221ACA424002096C4 /* chart.html */; };
+		B517313921ACA5F0002096C4 /* js in Resources */ = {isa = PBXBuildFile; fileRef = B517313421ACA5F0002096C4 /* js */; };
+		B517313A21ACA5F0002096C4 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = B517313521ACA5F0002096C4 /* index.html */; };
+		B517313B21ACA5F0002096C4 /* integrations in Resources */ = {isa = PBXBuildFile; fileRef = B517313621ACA5F0002096C4 /* integrations */; };
+		B517313C21ACA5F0002096C4 /* license in Resources */ = {isa = PBXBuildFile; fileRef = B517313721ACA5F0002096C4 /* license */; };
+		B517313D21ACA5F0002096C4 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = B517313821ACA5F0002096C4 /* assets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		B517312721ACA230002096C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B517312A21ACA230002096C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B517312C21ACA230002096C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B517313221ACA424002096C4 /* chart.html */ = {isa = PBXFileReference; explicitFileType = text.html; path = chart.html; sourceTree = "<group>"; };
+		B517313421ACA5F0002096C4 /* js */ = {isa = PBXFileReference; lastKnownFileType = folder; name = js; path = "../../../../../../Downloads/fusioncharts-suite-xt/js"; sourceTree = "<group>"; };
+		B517313521ACA5F0002096C4 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = index.html; path = "../../../../../../Downloads/fusioncharts-suite-xt/index.html"; sourceTree = "<group>"; };
+		B517313621ACA5F0002096C4 /* integrations */ = {isa = PBXFileReference; lastKnownFileType = folder; name = integrations; path = "../../../../../../Downloads/fusioncharts-suite-xt/integrations"; sourceTree = "<group>"; };
+		B517313721ACA5F0002096C4 /* license */ = {isa = PBXFileReference; lastKnownFileType = folder; name = license; path = "../../../../../../Downloads/fusioncharts-suite-xt/license"; sourceTree = "<group>"; };
+		B517313821ACA5F0002096C4 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = "../../../../../../Downloads/fusioncharts-suite-xt/assets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,11 @@
 		B517311C21ACA22D002096C4 /* GU Athletics Mindfulness */ = {
 			isa = PBXGroup;
 			children = (
+				B517313821ACA5F0002096C4 /* assets */,
+				B517313521ACA5F0002096C4 /* index.html */,
+				B517313621ACA5F0002096C4 /* integrations */,
+				B517313421ACA5F0002096C4 /* js */,
+				B517313721ACA5F0002096C4 /* license */,
 				B517311D21ACA22D002096C4 /* AppDelegate.swift */,
 				B517311F21ACA22D002096C4 /* ViewController.swift */,
 				B517312121ACA22D002096C4 /* Main.storyboard */,
@@ -63,6 +80,7 @@
 				B517312921ACA230002096C4 /* LaunchScreen.storyboard */,
 				B517312C21ACA230002096C4 /* Info.plist */,
 				B517312421ACA22D002096C4 /* GU_Athletics_Mindfulness.xcdatamodeld */,
+				B517313221ACA424002096C4 /* chart.html */,
 			);
 			path = "GU Athletics Mindfulness";
 			sourceTree = "<group>";
@@ -125,9 +143,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B517313921ACA5F0002096C4 /* js in Resources */,
 				B517312B21ACA230002096C4 /* LaunchScreen.storyboard in Resources */,
+				B517313C21ACA5F0002096C4 /* license in Resources */,
+				B517313D21ACA5F0002096C4 /* assets in Resources */,
 				B517312821ACA230002096C4 /* Assets.xcassets in Resources */,
+				B517313B21ACA5F0002096C4 /* integrations in Resources */,
+				B517313A21ACA5F0002096C4 /* index.html in Resources */,
 				B517312321ACA22D002096C4 /* Main.storyboard in Resources */,
+				B517313321ACA424002096C4 /* chart.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
