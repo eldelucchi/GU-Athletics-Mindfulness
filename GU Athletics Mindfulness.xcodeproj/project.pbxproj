@@ -19,6 +19,7 @@
 		B517313B21ACA5F0002096C4 /* integrations in Resources */ = {isa = PBXBuildFile; fileRef = B517313621ACA5F0002096C4 /* integrations */; };
 		B517313C21ACA5F0002096C4 /* license in Resources */ = {isa = PBXBuildFile; fileRef = B517313721ACA5F0002096C4 /* license */; };
 		B517313D21ACA5F0002096C4 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = B517313821ACA5F0002096C4 /* assets */; };
+		B5C11C9D21B48875008D702A /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C11C9C21B48875008D702A /* Day.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		B517313621ACA5F0002096C4 /* integrations */ = {isa = PBXFileReference; lastKnownFileType = folder; name = integrations; path = "../../../../../../Downloads/fusioncharts-suite-xt/integrations"; sourceTree = "<group>"; };
 		B517313721ACA5F0002096C4 /* license */ = {isa = PBXFileReference; lastKnownFileType = folder; name = license; path = "../../../../../../Downloads/fusioncharts-suite-xt/license"; sourceTree = "<group>"; };
 		B517313821ACA5F0002096C4 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = "../../../../../../Downloads/fusioncharts-suite-xt/assets"; sourceTree = "<group>"; };
+		B5C11C9C21B48875008D702A /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				B517312C21ACA230002096C4 /* Info.plist */,
 				B517312421ACA22D002096C4 /* GU_Athletics_Mindfulness.xcdatamodeld */,
 				B517313221ACA424002096C4 /* chart.html */,
+				B5C11C9C21B48875008D702A /* Day.swift */,
 			);
 			path = "GU Athletics Mindfulness";
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			files = (
 				B517312021ACA22D002096C4 /* ViewController.swift in Sources */,
 				B517311E21ACA22D002096C4 /* AppDelegate.swift in Sources */,
+				B5C11C9D21B48875008D702A /* Day.swift in Sources */,
 				B517312621ACA22D002096C4 /* GU_Athletics_Mindfulness.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
