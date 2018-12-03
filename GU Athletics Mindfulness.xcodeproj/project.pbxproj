@@ -20,6 +20,8 @@
 		B517313C21ACA5F0002096C4 /* license in Resources */ = {isa = PBXBuildFile; fileRef = B517313721ACA5F0002096C4 /* license */; };
 		B517313D21ACA5F0002096C4 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = B517313821ACA5F0002096C4 /* assets */; };
 		B5C11C9D21B48875008D702A /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C11C9C21B48875008D702A /* Day.swift */; };
+		B5C11CA421B4C3E1008D702A /* JsonSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C11CA221B4C3E1008D702A /* JsonSerializer.swift */; };
+		B5C11CA721B4C5E7008D702A /* DayCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C11CA621B4C5E7008D702A /* DayCollection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		B517313721ACA5F0002096C4 /* license */ = {isa = PBXFileReference; lastKnownFileType = folder; name = license; path = "../../../../../../Downloads/fusioncharts-suite-xt/license"; sourceTree = "<group>"; };
 		B517313821ACA5F0002096C4 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = "../../../../../../Downloads/fusioncharts-suite-xt/assets"; sourceTree = "<group>"; };
 		B5C11C9C21B48875008D702A /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		B5C11CA221B4C3E1008D702A /* JsonSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JsonSerializer.swift; path = ../../../JSONSerializer/JsonSerializerSwift/JsonSerializerSwift/JsonSerializer.swift; sourceTree = "<group>"; };
+		B5C11CA621B4C5E7008D702A /* DayCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCollection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,8 @@
 				B517312421ACA22D002096C4 /* GU_Athletics_Mindfulness.xcdatamodeld */,
 				B517313221ACA424002096C4 /* chart.html */,
 				B5C11C9C21B48875008D702A /* Day.swift */,
+				B5C11CA621B4C5E7008D702A /* DayCollection.swift */,
+				B5C11CA221B4C3E1008D702A /* JsonSerializer.swift */,
 			);
 			path = "GU Athletics Mindfulness";
 			sourceTree = "<group>";
@@ -165,10 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5C11CA721B4C5E7008D702A /* DayCollection.swift in Sources */,
 				B517312021ACA22D002096C4 /* ViewController.swift in Sources */,
 				B517311E21ACA22D002096C4 /* AppDelegate.swift in Sources */,
 				B5C11C9D21B48875008D702A /* Day.swift in Sources */,
 				B517312621ACA22D002096C4 /* GU_Athletics_Mindfulness.xcdatamodeld in Sources */,
+				B5C11CA421B4C3E1008D702A /* JsonSerializer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
