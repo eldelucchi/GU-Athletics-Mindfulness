@@ -1,0 +1,6 @@
+framework module Pods_GU_Athletics_Mindfulness {
+  umbrella header "Pods-GU Athletics Mindfulness-umbrella.h"
+
+  export *
+  module * { export * }
+}

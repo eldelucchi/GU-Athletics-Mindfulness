@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9739E595E09C73419484EE0D /* Pods_GU_Athletics_Mindfulness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FE339DDD1C5A46CFEE6C1A /* Pods_GU_Athletics_Mindfulness.framework */; };
 		B517311E21ACA22D002096C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B517311D21ACA22D002096C4 /* AppDelegate.swift */; };
 		B517312021ACA22D002096C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B517311F21ACA22D002096C4 /* ViewController.swift */; };
 		B517312321ACA22D002096C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B517312121ACA22D002096C4 /* Main.storyboard */; };
@@ -20,13 +21,14 @@
 		B517313C21ACA5F0002096C4 /* license in Resources */ = {isa = PBXBuildFile; fileRef = B517313721ACA5F0002096C4 /* license */; };
 		B517313D21ACA5F0002096C4 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = B517313821ACA5F0002096C4 /* assets */; };
 		B5C11C9D21B48875008D702A /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C11C9C21B48875008D702A /* Day.swift */; };
-		B5C11CA421B4C3E1008D702A /* JsonSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C11CA221B4C3E1008D702A /* JsonSerializer.swift */; };
 		B5C11CA721B4C5E7008D702A /* DayCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C11CA621B4C5E7008D702A /* DayCollection.swift */; };
 		EE28594E21BC7FAD004DED38 /* DaysTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE28594D21BC7FAD004DED38 /* DaysTableViewController.swift */; };
 		EE28595021BC8049004DED38 /* DaysTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE28594F21BC8049004DED38 /* DaysTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C051585A9128F3D5AC4A3A0 /* Pods-GU Athletics Mindfulness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GU Athletics Mindfulness.release.xcconfig"; path = "Pods/Target Support Files/Pods-GU Athletics Mindfulness/Pods-GU Athletics Mindfulness.release.xcconfig"; sourceTree = "<group>"; };
+		8992DC79E17321DCAD4DD1AA /* Pods-GU Athletics Mindfulness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GU Athletics Mindfulness.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GU Athletics Mindfulness/Pods-GU Athletics Mindfulness.debug.xcconfig"; sourceTree = "<group>"; };
 		B517311A21ACA22D002096C4 /* GU Athletics Mindfulness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GU Athletics Mindfulness.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B517311D21ACA22D002096C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B517311F21ACA22D002096C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,10 +44,10 @@
 		B517313721ACA5F0002096C4 /* license */ = {isa = PBXFileReference; lastKnownFileType = folder; name = license; path = "../../../../../../Downloads/fusioncharts-suite-xt/license"; sourceTree = "<group>"; };
 		B517313821ACA5F0002096C4 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = "../../../../../../Downloads/fusioncharts-suite-xt/assets"; sourceTree = "<group>"; };
 		B5C11C9C21B48875008D702A /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
-		B5C11CA221B4C3E1008D702A /* JsonSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JsonSerializer.swift; path = ../../../JSONSerializer/JsonSerializerSwift/JsonSerializerSwift/JsonSerializer.swift; sourceTree = "<group>"; };
 		B5C11CA621B4C5E7008D702A /* DayCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCollection.swift; sourceTree = "<group>"; };
 		EE28594D21BC7FAD004DED38 /* DaysTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysTableViewController.swift; sourceTree = "<group>"; };
 		EE28594F21BC8049004DED38 /* DaysTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysTableViewCell.swift; sourceTree = "<group>"; };
+		F8FE339DDD1C5A46CFEE6C1A /* Pods_GU_Athletics_Mindfulness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GU_Athletics_Mindfulness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,17 +55,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9739E595E09C73419484EE0D /* Pods_GU_Athletics_Mindfulness.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7835DC8CAE5C51FFA5D76DEA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8992DC79E17321DCAD4DD1AA /* Pods-GU Athletics Mindfulness.debug.xcconfig */,
+				6C051585A9128F3D5AC4A3A0 /* Pods-GU Athletics Mindfulness.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B517311121ACA22D002096C4 = {
 			isa = PBXGroup;
 			children = (
 				B517311C21ACA22D002096C4 /* GU Athletics Mindfulness */,
 				B517311B21ACA22D002096C4 /* Products */,
+				7835DC8CAE5C51FFA5D76DEA /* Pods */,
+				E0426B0C0AFE546859EA6457 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,9 +109,16 @@
 				B517313221ACA424002096C4 /* chart.html */,
 				B5C11C9C21B48875008D702A /* Day.swift */,
 				B5C11CA621B4C5E7008D702A /* DayCollection.swift */,
-				B5C11CA221B4C3E1008D702A /* JsonSerializer.swift */,
 			);
 			path = "GU Athletics Mindfulness";
+			sourceTree = "<group>";
+		};
+		E0426B0C0AFE546859EA6457 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8FE339DDD1C5A46CFEE6C1A /* Pods_GU_Athletics_Mindfulness.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,9 +128,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B517312F21ACA230002096C4 /* Build configuration list for PBXNativeTarget "GU Athletics Mindfulness" */;
 			buildPhases = (
+				4DEDA54446774DAAFA7D4744 /* [CP] Check Pods Manifest.lock */,
 				B517311621ACA22D002096C4 /* Sources */,
 				B517311721ACA22D002096C4 /* Frameworks */,
 				B517311821ACA22D002096C4 /* Resources */,
+				5E32264B87844114B85EAA8A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -172,6 +195,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4DEDA54446774DAAFA7D4744 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GU Athletics Mindfulness-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E32264B87844114B85EAA8A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GU Athletics Mindfulness/Pods-GU Athletics Mindfulness-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GU Athletics Mindfulness/Pods-GU Athletics Mindfulness-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B517311621ACA22D002096C4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -182,7 +252,6 @@
 				B517311E21ACA22D002096C4 /* AppDelegate.swift in Sources */,
 				B5C11C9D21B48875008D702A /* Day.swift in Sources */,
 				B517312621ACA22D002096C4 /* GU_Athletics_Mindfulness.xcdatamodeld in Sources */,
-				B5C11CA421B4C3E1008D702A /* JsonSerializer.swift in Sources */,
 				EE28595021BC8049004DED38 /* DaysTableViewCell.swift in Sources */,
 				EE28594E21BC7FAD004DED38 /* DaysTableViewController.swift in Sources */,
 			);
@@ -328,6 +397,7 @@
 		};
 		B517313021ACA230002096C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8992DC79E17321DCAD4DD1AA /* Pods-GU Athletics Mindfulness.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -346,6 +416,7 @@
 		};
 		B517313121ACA230002096C4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C051585A9128F3D5AC4A3A0 /* Pods-GU Athletics Mindfulness.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
