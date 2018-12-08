@@ -32,16 +32,16 @@ class ViewController:  UIViewController, WKUIDelegate {
         }
         
         
-        //Test stuff for the day class
-        let myDay = Day(hydration: .four, nutrition: .three, percievedStress: .two, fatigue: .five)
-        myDay.computeReadinessScore()
-        print(myDay)
-        var days = DayCollection()
-        for _ in 0..<5 {
-            days.appendDay(myDay)
-        }
-        let json = JSONSerializer.toJson(days)
-        print(json)
+//        //Test stuff for the day class
+//        let myDay = Day(hydration: .four, nutrition: .three, percievedStress: .two, fatigue: .five, sleepHours: 8.0)
+//        myDay.computeReadinessScore()
+//        print(myDay)
+//        var days = DayCollection()
+//        for _ in 0..<5 {
+//            days.appendDay(myDay)
+//        }
+//        let json = JSONSerializer.toJson(days)
+//        print(json)
     }
     
     override func didReceiveMemoryWarning() {

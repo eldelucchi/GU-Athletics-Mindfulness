@@ -22,6 +22,8 @@
 		B5C11C9D21B48875008D702A /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C11C9C21B48875008D702A /* Day.swift */; };
 		B5C11CA421B4C3E1008D702A /* JsonSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C11CA221B4C3E1008D702A /* JsonSerializer.swift */; };
 		B5C11CA721B4C5E7008D702A /* DayCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C11CA621B4C5E7008D702A /* DayCollection.swift */; };
+		EE28594E21BC7FAD004DED38 /* DaysTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE28594D21BC7FAD004DED38 /* DaysTableViewController.swift */; };
+		EE28595021BC8049004DED38 /* DaysTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE28594F21BC8049004DED38 /* DaysTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		B5C11C9C21B48875008D702A /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 		B5C11CA221B4C3E1008D702A /* JsonSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JsonSerializer.swift; path = ../../../JSONSerializer/JsonSerializerSwift/JsonSerializerSwift/JsonSerializer.swift; sourceTree = "<group>"; };
 		B5C11CA621B4C5E7008D702A /* DayCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCollection.swift; sourceTree = "<group>"; };
+		EE28594D21BC7FAD004DED38 /* DaysTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysTableViewController.swift; sourceTree = "<group>"; };
+		EE28594F21BC8049004DED38 /* DaysTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,8 @@
 				B517311D21ACA22D002096C4 /* AppDelegate.swift */,
 				B517311F21ACA22D002096C4 /* ViewController.swift */,
 				B517312121ACA22D002096C4 /* Main.storyboard */,
+				EE28594F21BC8049004DED38 /* DaysTableViewCell.swift */,
+				EE28594D21BC7FAD004DED38 /* DaysTableViewController.swift */,
 				B517312721ACA230002096C4 /* Assets.xcassets */,
 				B517312921ACA230002096C4 /* LaunchScreen.storyboard */,
 				B517312C21ACA230002096C4 /* Info.plist */,
@@ -177,6 +183,8 @@
 				B5C11C9D21B48875008D702A /* Day.swift in Sources */,
 				B517312621ACA22D002096C4 /* GU_Athletics_Mindfulness.xcdatamodeld in Sources */,
 				B5C11CA421B4C3E1008D702A /* JsonSerializer.swift in Sources */,
+				EE28595021BC8049004DED38 /* DaysTableViewCell.swift in Sources */,
+				EE28594E21BC7FAD004DED38 /* DaysTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

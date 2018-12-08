@@ -23,6 +23,7 @@ class Day: CustomStringConvertible{
     var fatigue: Rating
     var overallReadinessScore: Double
     var sleepHours: Double
+    var date: Date
     
     
     var description: String{
@@ -36,6 +37,7 @@ class Day: CustomStringConvertible{
         self.fatigue = fatigue
         self.sleepHours = sleepHours
         overallReadinessScore = 0.0
+        self.date = Date()
     }
     
     func computeReadinessScore() {
