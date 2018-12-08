@@ -23,6 +23,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="153" y="-43"/>
         </scene>
         <!--Days Table View Controller-->
         <scene sceneID="mih-it-PAB">
@@ -56,6 +57,10 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="dateLabel" destination="3gE-7s-xDo" id="5yR-n6-dF4"/>
+                                    <outlet property="readinessScoreLabel" destination="jD5-yX-RMG" id="5Xq-kf-YaH"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -66,7 +71,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nsZ-OI-zFC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="785" y="27"/>
+            <point key="canvasLocation" x="954" y="-43"/>
         </scene>
     </scenes>
 </document>
