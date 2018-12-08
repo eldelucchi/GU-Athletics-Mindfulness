@@ -22,17 +22,19 @@ class Day: CustomStringConvertible{
     var percievedStress: Rating
     var fatigue: Rating
     var overallReadinessScore: Double
+    var sleepHours: Double
     
     
     var description: String{
         return "Hydration: \(hydration), Nutrition: \(nutrition), Percieved Stress: \(percievedStress), Fatigue: \(fatigue), Overall Readiness Score: \(overallReadinessScore)"
     }
     
-    init(hydration: Rating, nutrition: Rating, percievedStress: Rating, fatigue: Rating) {
+    init(hydration: Rating, nutrition: Rating, percievedStress: Rating, fatigue: Rating, sleepHours: Double) {
         self.hydration = hydration
         self.nutrition = nutrition
         self.percievedStress = percievedStress
         self.fatigue = fatigue
+        self.sleepHours = sleepHours
         overallReadinessScore = 0.0
     }
     
