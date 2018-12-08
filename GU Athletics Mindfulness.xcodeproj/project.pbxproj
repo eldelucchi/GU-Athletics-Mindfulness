@@ -14,7 +14,6 @@
 		B517312621ACA22D002096C4 /* GU_Athletics_Mindfulness.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B517312421ACA22D002096C4 /* GU_Athletics_Mindfulness.xcdatamodeld */; };
 		B517312821ACA230002096C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B517312721ACA230002096C4 /* Assets.xcassets */; };
 		B517312B21ACA230002096C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B517312921ACA230002096C4 /* LaunchScreen.storyboard */; };
-		B517313321ACA424002096C4 /* chart.html in Resources */ = {isa = PBXBuildFile; fileRef = B517313221ACA424002096C4 /* chart.html */; };
 		B5C11C9D21B48875008D702A /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C11C9C21B48875008D702A /* Day.swift */; };
 		B5C11CA721B4C5E7008D702A /* DayCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C11CA621B4C5E7008D702A /* DayCollection.swift */; };
 		EE28594E21BC7FAD004DED38 /* DaysTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE28594D21BC7FAD004DED38 /* DaysTableViewController.swift */; };
@@ -32,7 +31,6 @@
 		B517312721ACA230002096C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B517312A21ACA230002096C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B517312C21ACA230002096C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B517313221ACA424002096C4 /* chart.html */ = {isa = PBXFileReference; explicitFileType = text.html; name = chart.html; path = "/Users/emmadelucchi/Documents/ComputerScience/cpsc315/finalProjectFixed/GU Athletics Mindfulness/chart.html"; sourceTree = "<absolute>"; };
 		B5C11C9C21B48875008D702A /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 		B5C11CA621B4C5E7008D702A /* DayCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCollection.swift; sourceTree = "<group>"; };
 		EE28594D21BC7FAD004DED38 /* DaysTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysTableViewController.swift; sourceTree = "<group>"; };
@@ -91,7 +89,6 @@
 				B517312921ACA230002096C4 /* LaunchScreen.storyboard */,
 				B517312C21ACA230002096C4 /* Info.plist */,
 				B517312421ACA22D002096C4 /* GU_Athletics_Mindfulness.xcdatamodeld */,
-				B517313221ACA424002096C4 /* chart.html */,
 				B5C11C9C21B48875008D702A /* Day.swift */,
 				B5C11CA621B4C5E7008D702A /* DayCollection.swift */,
 			);
@@ -169,7 +166,6 @@
 				B517312B21ACA230002096C4 /* LaunchScreen.storyboard in Resources */,
 				B517312821ACA230002096C4 /* Assets.xcassets in Resources */,
 				B517312321ACA22D002096C4 /* Main.storyboard in Resources */,
-				B517313321ACA424002096C4 /* chart.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

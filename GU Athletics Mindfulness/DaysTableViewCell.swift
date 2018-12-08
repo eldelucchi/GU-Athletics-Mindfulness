@@ -10,6 +10,9 @@ import UIKit
 
 class DaysTableViewCell: UITableViewCell {
 
+    @IBOutlet var dateLabel: UILabel!
+    @IBOutlet var readinessScoreLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,4 +24,8 @@ class DaysTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+//    func update(withDay day: Day){
+//        dateLabel.text = day.date
+//        readinessScoreLabel.text = day.overallReadinessScore
+//    }
 }
