@@ -18,6 +18,7 @@
 		B5C11CA721B4C5E7008D702A /* DayCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C11CA621B4C5E7008D702A /* DayCollection.swift */; };
 		EE28594E21BC7FAD004DED38 /* DaysTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE28594D21BC7FAD004DED38 /* DaysTableViewController.swift */; };
 		EE28595021BC8049004DED38 /* DaysTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE28594F21BC8049004DED38 /* DaysTableViewCell.swift */; };
+		EE28595621BC997F004DED38 /* DayDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE28595521BC997F004DED38 /* DayDetailTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		B5C11CA621B4C5E7008D702A /* DayCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCollection.swift; sourceTree = "<group>"; };
 		EE28594D21BC7FAD004DED38 /* DaysTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysTableViewController.swift; sourceTree = "<group>"; };
 		EE28594F21BC8049004DED38 /* DaysTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysTableViewCell.swift; sourceTree = "<group>"; };
+		EE28595521BC997F004DED38 /* DayDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDetailTableViewController.swift; sourceTree = "<group>"; };
 		F8FE339DDD1C5A46CFEE6C1A /* Pods_GU_Athletics_Mindfulness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GU_Athletics_Mindfulness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -91,6 +93,7 @@
 				B517312421ACA22D002096C4 /* GU_Athletics_Mindfulness.xcdatamodeld */,
 				B5C11C9C21B48875008D702A /* Day.swift */,
 				B5C11CA621B4C5E7008D702A /* DayCollection.swift */,
+				EE28595521BC997F004DED38 /* DayDetailTableViewController.swift */,
 			);
 			path = "GU Athletics Mindfulness";
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5C11CA721B4C5E7008D702A /* DayCollection.swift in Sources */,
+				EE28595621BC997F004DED38 /* DayDetailTableViewController.swift in Sources */,
 				B517312021ACA22D002096C4 /* ViewController.swift in Sources */,
 				B517311E21ACA22D002096C4 /* AppDelegate.swift in Sources */,
 				B5C11C9D21B48875008D702A /* Day.swift in Sources */,
