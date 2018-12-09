@@ -66,7 +66,7 @@
             </objects>
             <point key="canvasLocation" x="1892" y="-43.628185907046479"/>
         </scene>
-        <!--Day Detail Table View Controller-->
+        <!--New Entry-->
         <scene sceneID="THl-S6-c6Q">
             <objects>
                 <tableViewController id="zfp-9U-vf3" customClass="DayDetailTableViewController" customModule="GU_Athletics_Mindfulness" customModuleProvider="target" sceneMemberID="viewController">
@@ -84,7 +84,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="214.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xfm-iX-kbf">
+                                                <pickerView tag="1" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="sleepPicker" translatesAutoresizingMaskIntoConstraints="NO" id="xfm-iX-kbf">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                 </pickerView>
@@ -95,48 +95,72 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Hydration" id="shA-dg-zvT">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="e5H-aZ-LgI">
-                                        <rect key="frame" x="0.0" y="271" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="215" id="e5H-aZ-LgI">
+                                        <rect key="frame" x="0.0" y="271" width="375" height="215"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="e5H-aZ-LgI" id="9CI-LY-PLS">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="214.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <pickerView tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5cB-Nv-cMy">
+                                                    <rect key="frame" x="0.0" y="-1" width="375" height="216"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                </pickerView>
+                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
                             <tableViewSection headerTitle="Nutrition" id="MOK-1K-R5k">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="THr-lD-bCq">
-                                        <rect key="frame" x="0.0" y="343" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="215" id="THr-lD-bCq">
+                                        <rect key="frame" x="0.0" y="514" width="375" height="215"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="THr-lD-bCq" id="g6C-la-EJf">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="214.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <pickerView tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XrT-EL-q5b">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                </pickerView>
+                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
                             <tableViewSection headerTitle="Perceived Stress" id="rWY-Bp-PHl">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="e4V-NC-apy">
-                                        <rect key="frame" x="0.0" y="415" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="215" id="e4V-NC-apy">
+                                        <rect key="frame" x="0.0" y="757" width="375" height="215"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="e4V-NC-apy" id="c0W-zL-0Eg">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="214.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <pickerView tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QVv-At-T2U">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                </pickerView>
+                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
                             <tableViewSection headerTitle="Physical Fatigue" id="ZEW-8J-oYg">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="lW0-So-kdi">
-                                        <rect key="frame" x="0.0" y="487" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="215" id="lW0-So-kdi">
+                                        <rect key="frame" x="0.0" y="1000" width="375" height="215"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lW0-So-kdi" id="21B-sJ-wGT">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="214.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <pickerView tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SBZ-oW-Wm0">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                </pickerView>
+                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -147,8 +171,19 @@
                             <outlet property="delegate" destination="zfp-9U-vf3" id="8hU-iU-FTZ"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="New Entry" id="DBz-sd-n6H">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="9zm-ok-wpg">
+                            <connections>
+                                <action selector="donePressed:" destination="zfp-9U-vf3" id="4NR-Bm-xof"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="fatiguePicker" destination="SBZ-oW-Wm0" id="A40-gj-1ia"/>
+                        <outlet property="hydrationPicker" destination="5cB-Nv-cMy" id="Cqq-2L-ehV"/>
+                        <outlet property="nutritionPicker" destination="XrT-EL-q5b" id="Fjx-fP-ENU"/>
                         <outlet property="sleepPicker" destination="xfm-iX-kbf" id="jAG-IK-M3R"/>
+                        <outlet property="stressPicker" destination="QVv-At-T2U" id="beo-vi-Y7l"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rwW-Fl-pFq" userLabel="First Responder" sceneMemberID="firstResponder"/>

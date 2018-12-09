@@ -11,21 +11,61 @@ import UIKit
 class DayDetailTableViewController: UITableViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     let sleepHours = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24"]
     
+    let rating = ["1", "2", "3", "4", "5"]
+    
     @IBOutlet var sleepPicker: UIPickerView!
+    @IBOutlet var hydrationPicker: UIPickerView!
+    @IBOutlet var nutritionPicker: UIPickerView!
+    @IBOutlet var stressPicker: UIPickerView!
+    @IBOutlet var fatiguePicker: UIPickerView!
+    
     var day: Day? = nil
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        print("we're in")
-        self.sleepPicker.delegate = self
-        self.sleepPicker.dataSource = self
+        
+        sleepPicker.delegate = self
+        sleepPicker.dataSource = self
+        
+        hydrationPicker.delegate = self
+        hydrationPicker.dataSource = self
+        
+        nutritionPicker.delegate = self
+        nutritionPicker.dataSource = self
+        
+        stressPicker.delegate = self
+        stressPicker.dataSource = self
+        
+        fatiguePicker.delegate = self
+        fatiguePicker.dataSource = self
+        
+        if let day = day {
+            setupView(day: day)
+        }
+        
+        
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    
+    func setupView(day: Day) {
+        let sleepInd = day.sleepHours - 1
+        let hydrationInd = day.hydration.rawValue - 1
+        let nutritionInd = day.nutrition.rawValue - 1
+        let stressInd = day.nutrition.rawValue - 1
+        let fatigueInd = day.fatigue.rawValue - 1
+        
+        
+        sleepPicker.selectRow(sleepInd, inComponent: 1, animated: true)
+        hydrationPicker.selectRow(hydrationInd, inComponent: 1, animated: true)
+        nutritionPicker.selectRow(nutritionInd, inComponent: 1, animated: true)
+        stressPicker.selectRow(stressInd, inComponent: 1, animated: true)
+        fatiguePicker.selectRow(fatigueInd, inComponent: 1, animated: true)
     }
 
     // MARK: - Table view data source
@@ -45,10 +85,22 @@ class DayDetailTableViewController: UITableViewController, UIPickerViewDelegate,
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return sleepHours.count
+        if pickerView.tag == 1 {
+            return sleepHours.count
+        }
+        else {
+            return rating.count
+        }
+        
     }
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return sleepHours[row]
+        if pickerView.tag == 1 {
+            return sleepHours[row]
+        }
+        else {
+            return rating[row]
+        }
+        
     }
 
     /*
@@ -106,4 +158,7 @@ class DayDetailTableViewController: UITableViewController, UIPickerViewDelegate,
     }
     */
 
+    @IBAction func donePressed(_ sender: Any) {
+        // unwind here
+    }
 }
