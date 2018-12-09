@@ -24,8 +24,10 @@ class DaysTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-//    func update(withDay day: Day){
-//        dateLabel.text = day.date
-//        readinessScoreLabel.text = day.overallReadinessScore
-//    }
+    func update(withDay day: Day){
+        let df = DateFormatter()
+        df.dateFormat = "MM/dd/yyyy"
+        dateLabel.text = df.string(from: day.date)
+        readinessScoreLabel.text = String(day.overallReadinessScore)
+    }
 }
