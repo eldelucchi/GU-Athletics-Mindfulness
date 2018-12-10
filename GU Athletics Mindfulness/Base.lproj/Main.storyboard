@@ -54,7 +54,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="Kts-lo-kIo">
-                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="anK-po-LSj"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="44w-J0-A9s">
                             <connections>
                                 <segue destination="zfp-9U-vf3" kind="show" identifier="addSegue" id="YsT-rG-p2A"/>
@@ -174,7 +173,7 @@
                     <navigationItem key="navigationItem" title="New Entry" id="DBz-sd-n6H">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="9zm-ok-wpg">
                             <connections>
-                                <action selector="donePressed:" destination="zfp-9U-vf3" id="4NR-Bm-xof"/>
+                                <segue destination="yeJ-Zd-WPR" kind="unwind" unwindAction="unwindToDaysTableVCWithSegue:" id="VAg-yA-TSq"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -187,6 +186,7 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rwW-Fl-pFq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="yeJ-Zd-WPR" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2629.5999999999999" y="-44.527736131934034"/>
         </scene>
