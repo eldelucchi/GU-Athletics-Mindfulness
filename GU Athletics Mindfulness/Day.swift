@@ -9,6 +9,7 @@
 import Foundation
 
 class Day: CustomStringConvertible{
+    var name: String
     var hydration: Int
     var nutrition: Int
     var percievedStress: Int
@@ -24,13 +25,14 @@ class Day: CustomStringConvertible{
         return "Hydration: \(hydration), Nutrition: \(nutrition), Percieved Stress: \(percievedStress), Fatigue: \(fatigue), Overall Readiness Score: \(overallReadinessScore)"
     }
     
-    init(hydration: Int, nutrition: Int, percievedStress: Int, fatigue: Int, sleepHours: Int) {
+    init(name: String, hydration: Int, nutrition: Int, percievedStress: Int, fatigue: Int, sleepHours: Int) {
         self.hydration = hydration
         self.nutrition = nutrition
         self.percievedStress = percievedStress
         self.fatigue = fatigue
         self.sleepHours = sleepHours
         self.date = Date()
+        self.name = name
     }
     
 //    func computeReadinessScore() {

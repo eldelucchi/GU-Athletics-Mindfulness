@@ -163,7 +163,7 @@ class DayDetailTableViewController: UITableViewController, UIPickerViewDelegate,
         let fatigue = fatiguePicker.selectedRow(inComponent: 0)
         let sleep = sleepPicker.selectedRow(inComponent: 0)
         
-        let newDay = Day(hydration: hydration, nutrition: nutrition, percievedStress: perceivedStress, fatigue: fatigue, sleepHours: sleep)
+        let newDay = Day(name: "Monday", hydration: hydration, nutrition: nutrition, percievedStress: perceivedStress, fatigue: fatigue, sleepHours: sleep)
         self.day = newDay
     }
 

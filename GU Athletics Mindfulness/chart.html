@@ -111,10 +111,10 @@
             
             FusionCharts.ready(function() {
                                var myChart = new FusionCharts({
-                                                              type: "mscolumn2d",
+                                                              type: "scrollcolumn2d",
                                                               renderAt: "chart-container",
                                                               width: "100%",
-                                                              height: '800',
+                                                              height: '800', // TODO: Change this to the size of the screen
                                                               dataFormat: "json",
                                                               dataSource
                                                               }).render();
@@ -127,3 +127,4 @@
         <div style="height: 50px;"></div>
     </body>
 </html>
+
