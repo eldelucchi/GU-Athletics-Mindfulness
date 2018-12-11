@@ -11,6 +11,9 @@ import UIKit
 class DaysTableViewController: UITableViewController {
     
     var days = [Day]()
+    var selectedCells = [Int]()
+    var editButton = UIBarButtonItem()
+    @IBOutlet var addButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +23,19 @@ class DaysTableViewController: UITableViewController {
         
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         self.navigationItem.leftBarButtonItem = self.editButtonItem
+        tableView.allowsMultipleSelectionDuringEditing = true
+    }
+    
+    override func setEditing(_ editing: Bool, animated: Bool) {
+        super.setEditing(editing, animated: true)
+        if editing {
+            selectedCells.removeAll()
+            let chartButton = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(showChart))
+            self.navigationItem.rightBarButtonItem = chartButton
+        } else {
+            selectedCells.removeAll()
+            self.navigationItem.rightBarButtonItem = addButton
+        }
     }
     
     // MARK: - Table view data source
@@ -68,6 +84,10 @@ class DaysTableViewController: UITableViewController {
         return cell
     }
     
+    @objc func editButtonPressed() {
+        print("we're pressed")
+    }
+    
     
     /*
      // Override to support conditional editing of the table view.
@@ -87,6 +107,18 @@ class DaysTableViewController: UITableViewController {
             tableView.reloadData()
          }
      }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedCells.append(indexPath.row)
+    }
+    override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        if selectedCells.contains(indexPath.row) {
+            if let index = selectedCells.firstIndex(of: indexPath.row) {
+                selectedCells.remove(at: index)
+            }
+        }
+    }
+    
  
     
     /*
@@ -124,5 +156,18 @@ class DaysTableViewController: UITableViewController {
         }
     }
     
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if tableView.isEditing {
+            return false
+        }
+        else {
+            return true
+        }
+    }
+    
+    @objc func showChart() {
+        // grab selected cell's data and show the chart
+        print("showing chart")
+    }
     
 }

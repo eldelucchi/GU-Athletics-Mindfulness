@@ -60,6 +60,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="addButton" destination="44w-J0-A9s" id="60y-AD-jLb"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nsZ-OI-zFC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
