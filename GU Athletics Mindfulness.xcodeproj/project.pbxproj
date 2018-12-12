@@ -11,7 +11,6 @@
 		B517311E21ACA22D002096C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B517311D21ACA22D002096C4 /* AppDelegate.swift */; };
 		B517312021ACA22D002096C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B517311F21ACA22D002096C4 /* ViewController.swift */; };
 		B517312321ACA22D002096C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B517312121ACA22D002096C4 /* Main.storyboard */; };
-		B517312621ACA22D002096C4 /* GU_Athletics_Mindfulness.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B517312421ACA22D002096C4 /* GU_Athletics_Mindfulness.xcdatamodeld */; };
 		B517312821ACA230002096C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B517312721ACA230002096C4 /* Assets.xcassets */; };
 		B517312B21ACA230002096C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B517312921ACA230002096C4 /* LaunchScreen.storyboard */; };
 		B59B3F4121BEBFEE006C2778 /* JSONSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59B3F4021BEBFEE006C2778 /* JSONSerializer.swift */; };
@@ -23,6 +22,9 @@
 		EE28594E21BC7FAD004DED38 /* DaysTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE28594D21BC7FAD004DED38 /* DaysTableViewController.swift */; };
 		EE28595021BC8049004DED38 /* DaysTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE28594F21BC8049004DED38 /* DaysTableViewCell.swift */; };
 		EE28595621BC997F004DED38 /* DayDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE28595521BC997F004DED38 /* DayDetailTableViewController.swift */; };
+		EE9BFD8D21C0A80500736D2A /* datamodel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE9BFD8B21C0A80500736D2A /* datamodel.xcdatamodeld */; };
+		EE9BFD9821C0A9A200736D2A /* Day+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9BFD9621C0A9A200736D2A /* Day+CoreDataClass.swift */; };
+		EE9BFD9921C0A9A200736D2A /* Day+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9BFD9721C0A9A200736D2A /* Day+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +34,6 @@
 		B517311D21ACA22D002096C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B517311F21ACA22D002096C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B517312221ACA22D002096C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B517312521ACA22D002096C4 /* GU_Athletics_Mindfulness.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GU_Athletics_Mindfulness.xcdatamodel; sourceTree = "<group>"; };
 		B517312721ACA230002096C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B517312A21ACA230002096C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B517312C21ACA230002096C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +46,9 @@
 		EE28594D21BC7FAD004DED38 /* DaysTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysTableViewController.swift; sourceTree = "<group>"; };
 		EE28594F21BC8049004DED38 /* DaysTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysTableViewCell.swift; sourceTree = "<group>"; };
 		EE28595521BC997F004DED38 /* DayDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDetailTableViewController.swift; sourceTree = "<group>"; };
+		EE9BFD8C21C0A80500736D2A /* GU_Athletics_Mindfulness.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GU_Athletics_Mindfulness.xcdatamodel; sourceTree = "<group>"; };
+		EE9BFD9621C0A9A200736D2A /* Day+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EE9BFD9721C0A9A200736D2A /* Day+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F8FE339DDD1C5A46CFEE6C1A /* Pods_GU_Athletics_Mindfulness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GU_Athletics_Mindfulness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -90,6 +94,9 @@
 		B517311C21ACA22D002096C4 /* GU Athletics Mindfulness */ = {
 			isa = PBXGroup;
 			children = (
+				EE9BFD9621C0A9A200736D2A /* Day+CoreDataClass.swift */,
+				EE9BFD9721C0A9A200736D2A /* Day+CoreDataProperties.swift */,
+				EE9BFD8B21C0A80500736D2A /* datamodel.xcdatamodeld */,
 				B517311D21ACA22D002096C4 /* AppDelegate.swift */,
 				B517311F21ACA22D002096C4 /* ViewController.swift */,
 				B517312121ACA22D002096C4 /* Main.storyboard */,
@@ -98,7 +105,6 @@
 				B517312721ACA230002096C4 /* Assets.xcassets */,
 				B517312921ACA230002096C4 /* LaunchScreen.storyboard */,
 				B517312C21ACA230002096C4 /* Info.plist */,
-				B517312421ACA22D002096C4 /* GU_Athletics_Mindfulness.xcdatamodeld */,
 				B5C11C9C21B48875008D702A /* Day.swift */,
 				B59B3F7021BF45FA006C2778 /* chart.html */,
 				B59B3F6C21BF4500006C2778 /* fusioncharts.js */,
@@ -243,11 +249,13 @@
 			files = (
 				B5C11CA721B4C5E7008D702A /* DayCollection.swift in Sources */,
 				B59B3F4121BEBFEE006C2778 /* JSONSerializer.swift in Sources */,
+				EE9BFD8D21C0A80500736D2A /* datamodel.xcdatamodeld in Sources */,
+				EE9BFD9921C0A9A200736D2A /* Day+CoreDataProperties.swift in Sources */,
 				EE28595621BC997F004DED38 /* DayDetailTableViewController.swift in Sources */,
+				EE9BFD9821C0A9A200736D2A /* Day+CoreDataClass.swift in Sources */,
 				B517312021ACA22D002096C4 /* ViewController.swift in Sources */,
 				B517311E21ACA22D002096C4 /* AppDelegate.swift in Sources */,
 				B5C11C9D21B48875008D702A /* Day.swift in Sources */,
-				B517312621ACA22D002096C4 /* GU_Athletics_Mindfulness.xcdatamodeld in Sources */,
 				EE28595021BC8049004DED38 /* DaysTableViewCell.swift in Sources */,
 				EE28594E21BC7FAD004DED38 /* DaysTableViewController.swift in Sources */,
 			);
@@ -453,13 +461,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		B517312421ACA22D002096C4 /* GU_Athletics_Mindfulness.xcdatamodeld */ = {
+		EE9BFD8B21C0A80500736D2A /* datamodel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				B517312521ACA22D002096C4 /* GU_Athletics_Mindfulness.xcdatamodel */,
+				EE9BFD8C21C0A80500736D2A /* GU_Athletics_Mindfulness.xcdatamodel */,
 			);
-			currentVersion = B517312521ACA22D002096C4 /* GU_Athletics_Mindfulness.xcdatamodel */;
-			path = GU_Athletics_Mindfulness.xcdatamodeld;
+			currentVersion = EE9BFD8C21C0A80500736D2A /* GU_Athletics_Mindfulness.xcdatamodel */;
+			path = datamodel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

@@ -77,10 +77,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <sections>
+                            <tableViewSection headerTitle="Entry Name" id="xDX-Sc-e4p">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="62" id="fUN-Nn-pN4">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="62"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fUN-Nn-pN4" id="xMj-FP-Wjm">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="61.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Entry Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QuD-xt-X9G">
+                                                    <rect key="frame" x="20" y="15" width="335" height="32"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="QuD-xt-X9G" secondAttribute="trailing" constant="4" id="9w9-12-TY8"/>
+                                                <constraint firstItem="QuD-xt-X9G" firstAttribute="leading" secondItem="xMj-FP-Wjm" secondAttribute="leadingMargin" constant="4" id="VnJ-fs-R5E"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="QuD-xt-X9G" secondAttribute="bottom" constant="4" id="bBh-F1-o1a"/>
+                                                <constraint firstItem="QuD-xt-X9G" firstAttribute="top" secondItem="xMj-FP-Wjm" secondAttribute="topMargin" constant="4" id="etC-fT-Yh6"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                             <tableViewSection headerTitle="Sleep (Hours)" id="LyZ-LN-4KD">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="215" id="P8z-R3-68Z">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="215"/>
+                                        <rect key="frame" x="0.0" y="118" width="375" height="215"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="P8z-R3-68Z" id="bdg-RH-w93">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="214.5"/>
@@ -98,7 +124,7 @@
                             <tableViewSection headerTitle="Hydration" id="shA-dg-zvT">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="215" id="e5H-aZ-LgI">
-                                        <rect key="frame" x="0.0" y="271" width="375" height="215"/>
+                                        <rect key="frame" x="0.0" y="361" width="375" height="215"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="e5H-aZ-LgI" id="9CI-LY-PLS">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="214.5"/>
@@ -116,7 +142,7 @@
                             <tableViewSection headerTitle="Nutrition" id="MOK-1K-R5k">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="215" id="THr-lD-bCq">
-                                        <rect key="frame" x="0.0" y="514" width="375" height="215"/>
+                                        <rect key="frame" x="0.0" y="604" width="375" height="215"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="THr-lD-bCq" id="g6C-la-EJf">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="214.5"/>
@@ -134,7 +160,7 @@
                             <tableViewSection headerTitle="Perceived Stress" id="rWY-Bp-PHl">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="215" id="e4V-NC-apy">
-                                        <rect key="frame" x="0.0" y="757" width="375" height="215"/>
+                                        <rect key="frame" x="0.0" y="847" width="375" height="215"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="e4V-NC-apy" id="c0W-zL-0Eg">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="214.5"/>
@@ -152,7 +178,7 @@
                             <tableViewSection headerTitle="Physical Fatigue" id="ZEW-8J-oYg">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="215" id="lW0-So-kdi">
-                                        <rect key="frame" x="0.0" y="1000" width="375" height="215"/>
+                                        <rect key="frame" x="0.0" y="1090" width="375" height="215"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lW0-So-kdi" id="21B-sJ-wGT">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="214.5"/>
@@ -183,12 +209,18 @@
                     <connections>
                         <outlet property="fatiguePicker" destination="SBZ-oW-Wm0" id="A40-gj-1ia"/>
                         <outlet property="hydrationPicker" destination="5cB-Nv-cMy" id="Cqq-2L-ehV"/>
+                        <outlet property="nameField" destination="QuD-xt-X9G" id="GPp-lM-8a8"/>
                         <outlet property="nutritionPicker" destination="XrT-EL-q5b" id="Fjx-fP-ENU"/>
                         <outlet property="sleepPicker" destination="xfm-iX-kbf" id="jAG-IK-M3R"/>
                         <outlet property="stressPicker" destination="QVv-At-T2U" id="beo-vi-Y7l"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rwW-Fl-pFq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="lJR-Ee-Ld1">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="zfp-9U-vf3" id="XmX-jW-OpP"/>
+                    </connections>
+                </tapGestureRecognizer>
                 <exit id="yeJ-Zd-WPR" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2629.5999999999999" y="-44.527736131934034"/>

@@ -21,7 +21,10 @@ class JSONSerializer{
         //2
         jsonString.append("\"categories\":[{\"category\":[")
         for date in dayCollection.days{
-            jsonString.append("{\"label\":\"" + date.name + "\"},")
+            if let name = date.name {
+                jsonString.append("{\"label\":\"" + name + "\"},")
+            }
+            
         }
         jsonString.removeLast()//backtrack the last comma
         jsonString.append("]}],")
@@ -48,7 +51,7 @@ class JSONSerializer{
         //Percieved Stress
         jsonString.append("{\"seriesname\": " + "\"Percieved Stress" + "\",\"data\": [")
         for date in dayCollection.days{
-            jsonString.append("{\"value\": \"" + String(date.percievedStress) + "\"},")
+            jsonString.append("{\"value\": \"" + String(date.perceivedStress) + "\"},")
         }
         jsonString.removeLast()//backtrack the last comma
         jsonString.append("]},")

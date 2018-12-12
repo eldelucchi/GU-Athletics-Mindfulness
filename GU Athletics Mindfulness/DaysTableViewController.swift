@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import CoreData
 
 class DaysTableViewController: UITableViewController {
     
     var days = [Day]()
     var selectedCells = [Int]()
     var editButton = UIBarButtonItem()
+    
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+
     @IBOutlet var addButton: UIBarButtonItem!
     
     override func viewDidLoad() {
@@ -24,6 +28,9 @@ class DaysTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         self.navigationItem.leftBarButtonItem = self.editButtonItem
         tableView.allowsMultipleSelectionDuringEditing = true
+        print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!)
+        
+        loadDays()
     }
     
     override func setEditing(_ editing: Bool, animated: Bool) {
@@ -65,8 +72,7 @@ class DaysTableViewController: UITableViewController {
                 print("identifier is detailSegue unwinding")
                 days.append(day)
                 tableView.reloadData()
-                // ###########################################################################
-                // save to Core data here
+                saveDays()
             }
         }
         
@@ -102,8 +108,10 @@ class DaysTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
          if editingStyle == .delete {
             // Delete the row from the data source
+            context.delete(days[indexPath.row])
             days.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
+            saveDays()
             tableView.reloadData()
          }
      }
@@ -168,6 +176,34 @@ class DaysTableViewController: UITableViewController {
     @objc func showChart() {
         // grab selected cell's data and show the chart
         print("showing chart")
+    }
+    
+    
+    func loadDays() {
+        let request: NSFetchRequest<Day> = Day.fetchRequest()
+        // typically with a SELECT statement, if you don't want all the rows in the table, you would specify a WHERE clause
+        // if we wanted a subset of the rows, we would use a NSPredicate object and add it to our request
+        // don't need to this now, because we do want all categories
+        do {
+            days = try context.fetch(request)
+        }
+        catch {
+            print("Error fetching days: \(error)")
+        }
+        tableView.reloadData()
+    }
+    
+    func saveDays() {
+        // this method will write the changes we have made to our context to disk (SQLite DB)
+        // try to save the context
+        do {
+            try context.save() // like a git commit
+        }
+        catch {
+            print("Error saving days")
+        }
+        
+        self.tableView.reloadData()
     }
     
 }

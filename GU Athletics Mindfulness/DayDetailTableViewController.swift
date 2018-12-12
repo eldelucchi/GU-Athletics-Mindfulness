@@ -8,22 +8,26 @@
 
 import UIKit
 
-class DayDetailTableViewController: UITableViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class DayDetailTableViewController: UITableViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
     let sleepHours = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24"]
     
     let rating = ["1", "2", "3", "4", "5"]
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     @IBOutlet var sleepPicker: UIPickerView!
     @IBOutlet var hydrationPicker: UIPickerView!
     @IBOutlet var nutritionPicker: UIPickerView!
     @IBOutlet var stressPicker: UIPickerView!
     @IBOutlet var fatiguePicker: UIPickerView!
+    @IBOutlet var nameField: UITextField!
     
     var day: Day? = nil
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        nameField.delegate = self
         
         sleepPicker.delegate = self
         sleepPicker.dataSource = self
@@ -41,7 +45,12 @@ class DayDetailTableViewController: UITableViewController, UIPickerViewDelegate,
         fatiguePicker.dataSource = self
         
         if let day = day {
-            setupView(day: day)
+            if let name = day.name {
+                
+                self.navigationItem.title = name
+                setupView(day: day)
+            }
+            
         }
         
         
@@ -54,11 +63,14 @@ class DayDetailTableViewController: UITableViewController, UIPickerViewDelegate,
     }
     
     func setupView(day: Day) {
-        let sleepInd = day.sleepHours - 1
-        let hydrationInd = day.hydration - 1
-        let nutritionInd = day.nutrition - 1
-        let stressInd = day.nutrition - 1
-        let fatigueInd = day.fatigue - 1
+        if let name = day.name {
+            nameField.text = name
+        }
+        let sleepInd = Int(day.sleepHours - 1)
+        let hydrationInd = Int(day.hydration - 1)
+        let nutritionInd = Int(day.nutrition - 1)
+        let stressInd = Int(day.nutrition - 1)
+        let fatigueInd = Int(day.fatigue - 1)
         
         
         sleepPicker.selectRow(sleepInd, inComponent: 0, animated: true)
@@ -101,6 +113,15 @@ class DayDetailTableViewController: UITableViewController, UIPickerViewDelegate,
             return rating[row]
         }
         
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        nameField.resignFirstResponder()
+        return true
+    }
+    
+    @IBAction func dismissKeyboard(_ sender: UITapGestureRecognizer) {
+        nameField.resignFirstResponder()
     }
     
     /*
@@ -163,8 +184,36 @@ class DayDetailTableViewController: UITableViewController, UIPickerViewDelegate,
         let fatigue = fatiguePicker.selectedRow(inComponent: 0)
         let sleep = sleepPicker.selectedRow(inComponent: 0)
         
-        let newDay = Day(name: "Monday", hydration: hydration, nutrition: nutrition, percievedStress: perceivedStress, fatigue: fatigue, sleepHours: sleep)
-        self.day = newDay
+        let newDay = Day(context: context)
+        if let name = nameField.text {
+            newDay.name = name
+            newDay.date = NSDate()
+            newDay.hydration = Int16(hydration)
+            newDay.nutrition = Int16(nutrition)
+            newDay.perceivedStress = Int16(perceivedStress)
+            newDay.fatigue = Int16(fatigue)
+            newDay.sleepHours = Int16(sleep)
+            self.day = newDay
+        }
+        
+    }
+    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if nameField.text == "" {
+            let title = "Entry Name is Required"
+            let message = "Please input an entry name."
+            let ac =  UIAlertController(title: title, message: message, preferredStyle: .actionSheet)
+            
+            let okayAction = UIAlertAction(title: "Okay", style: .default, handler: nil)
+            
+            ac.addAction(okayAction)
+            present(ac, animated: true, completion: nil)
+            
+            return false
+        }
+        else {
+            return true
+        }
     }
 
 }

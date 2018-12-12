@@ -27,7 +27,13 @@ class DaysTableViewCell: UITableViewCell {
     func update(withDay day: Day){
         let df = DateFormatter()
         df.dateFormat = "MM/dd/yyyy"
-        dateLabel.text = df.string(from: day.date)
-        readinessScoreLabel.text = String(day.overallReadinessScore)
+        if let date = day.date! as Date? {
+            if let name = day.name {
+                dateLabel.text = "\(name)-\(df.string(from: date))"
+                readinessScoreLabel.text = String(day.overallReadinessScore)
+            }
+            
+        }
+        
     }
 }
